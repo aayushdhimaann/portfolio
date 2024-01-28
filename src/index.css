@@ -76,7 +76,7 @@ nav a.activ{
   font-size: x-large;
   text-shadow: 0px 0px 5px grey;
 }
-#navbar .right button,#resume-button,.hirebtn{
+#navbar .right button,#resume-button,.hirebtn,#contact-btn{
   margin-top: 15px;
   height: 30px;
   width: 100px;
@@ -258,9 +258,6 @@ nav a.activ{
 #main .social-icons .icon a{
   color: white;
 }
-/* #main .social-icons .icon:hover{
-  box-shadow: 0px 0px 6px 4px rgb(0, 0, 26);
-} */
 #second{
   /* background-color: blue; */
   /* background-color: yellow; */
@@ -269,7 +266,7 @@ nav a.activ{
   width: 40vw;
   margin: 60px auto;
 }
-#second .abt,#third .skl,#education .edu{
+#second .abt,#third .skl,#education .edu,#projects #proj{
   text-align: center;
   color: var(--namecolor);
   font-size: 50px;
@@ -291,7 +288,7 @@ nav a.activ{
   /* background-color: blue; */
   margin: 50px auto;
 }
-#third .skl a,.abt a{
+#third .skl a,.abt a,.edu a,#projects #proj a{
   color: var(--namecolor);
   cursor: pointer;
 }
@@ -319,16 +316,85 @@ nav a.activ{
   font-weight: 700;
 }
 #education{
-  width: 80vw;
+  width: 40vw;
   height: 60vh;
-  background-color: blue;
+  /* background-color: blue; */
   margin: 100px auto;
 }
-
+#education .edu-list{
+  width: 100%;
+  height: auto;
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+#education .edu-list .eduuu{
+  width: 300px;
+  /* border: 2px solid black; */
+  border-bottom:5px solid var(--namecolor) ;
+  margin-top: 10px;
+  box-sizing: border-box;
+  padding: 10px;
+}
 #third .skills-home .skill-icon{
   font-size: 20px;
   /* letter-spacing: 10px; */
 } 
+#projects{
+  height: auto;
+  width: 80vw;
+  /* background-color: blue; */
+  margin: 150px auto;
+}
+#projects .proj-images{
+  width: 100%;
+  height: auto;
+  /* background-color: aqua; */
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+#projects .proj-img{
+  width: 300px;
+  height: 150px;
+  /* background-color: red; */
+  border: 2px solid;
+  border-radius: 10px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+#projects .proj-images .proj-img img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: all linear 0.5s;
+}
+.proj-img:hover img{
+  transform: scale(1.2);
+}
+#contact{
+  height: 10vh;
+  width: 80vw;
+  /* background-color: aqua; */
+  margin: -60px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+#contact #contact-btn{
+  height: 50px;
+  width: 200px;
+  font-weight: 700;
+  font-size: 20px;
+  cursor: pointer;
+}
 @media screen and (max-width:730px) {
   #navbar .right{
     display: none;
@@ -446,7 +512,9 @@ nav a.activ{
   }
   #education{
     margin-top: 200px;
+    width: 80vw;
   }
+  
 }
 @media screen and (max-width:380px) {
   /* #main{

@@ -8,6 +8,8 @@ import Me from "./Me";
 import MiniAbout from "./MiniAbout";
 import MiniSkills from "./MiniSkills";
 import MiniEducation from "./MiniEducation";
+import MiniProjects from "./MiniProjects";
+import MiniContact from "./MiniContact";
 const Home = () => {
   const el = useRef(null);
   useEffect(() => {
@@ -64,6 +66,12 @@ const Home = () => {
       </section>
       <section id="education">
         <MiniEducation />
+      </section>
+      <section id="projects">
+        <MiniProjects />
+      </section>
+      <section id="contact">
+        <MiniContact />
       </section>
     </>
   );
