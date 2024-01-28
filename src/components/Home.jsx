@@ -10,6 +10,8 @@ import MiniSkills from "./MiniSkills";
 import MiniEducation from "./MiniEducation";
 import MiniProjects from "./MiniProjects";
 import MiniContact from "./MiniContact";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCopyright } from "@fortawesome/free-solid-svg-icons";
 const Home = () => {
   const el = useRef(null);
   useEffect(() => {
@@ -73,6 +75,7 @@ const Home = () => {
       <section id="contact">
         <MiniContact />
       </section>
+     
     </>
   );
 };

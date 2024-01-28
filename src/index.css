@@ -382,7 +382,7 @@ nav a.activ{
   height: 10vh;
   width: 80vw;
   /* background-color: aqua; */
-  margin: -60px auto;
+  margin: 0px auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -394,6 +394,21 @@ nav a.activ{
   font-weight: 700;
   font-size: 20px;
   cursor: pointer;
+  /* margin-top: -200px; */
+}
+footer{
+  height: 10vh;
+  width: 100%;
+  background-color: #14191b;
+  /* margin: 10px auto; */
+  margin-top: 50px;
+  padding: 10px;
+  box-sizing: border-box;
+  position: absolute;
+  /* bottom: 0px; */
+}
+footer p{
+  text-align: center;
 }
 @media screen and (max-width:730px) {
   #navbar .right{
