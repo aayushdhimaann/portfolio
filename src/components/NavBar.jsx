@@ -15,7 +15,7 @@ const NavBar = () => {
     <nav id="navbar">
       <div className="center">
         <ul>
-          <li>
+          <motion.li whileHover={{scale:1.1}} transition={{type:'spring',stiffness:500}}>
             <NavLink
               to="/"
               className={({ isActive }) => (isActive ? "activ" : "")}
@@ -23,48 +23,48 @@ const NavBar = () => {
             >
               Home
             </NavLink>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li whileHover={{scale:1.1}} transition={{type:'spring',stiffness:500}}>
             <NavLink
               to="/about"
               className={({ isActive }) => (isActive ? "activ" : "")}
             >
               About
             </NavLink>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li whileHover={{scale:1.1}} transition={{type:'spring',stiffness:500}}>
             <NavLink
               to="/skills"
               className={({ isActive }) => (isActive ? "activ" : "")}
             >
               Skills
             </NavLink>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li whileHover={{scale:1.1}} transition={{type:'spring',stiffness:500}} >
             <NavLink
               to="/education"
               className={({ isActive }) => (isActive ? "activ" : "")}
             >
               Education
             </NavLink>
-          </li>
+          </motion.li>
          
-          <li>
+          <motion.li whileHover={{scale:1.1}} transition={{type:'spring',stiffness:500}}>
             <NavLink
               to="/projects"
               className={({ isActive }) => (isActive ? "activ" : "")}
             >
               Projects
             </NavLink>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li whileHover={{scale:1.1}} transition={{type:'spring',stiffness:500}}>
             <NavLink
               to="/contact"
               className={({ isActive }) => (isActive ? "activ" : "")}
             >
               Contact
             </NavLink>
-          </li>
+          </motion.li>
         </ul>
       </div>
       <div className="right">

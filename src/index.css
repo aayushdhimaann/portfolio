@@ -20,12 +20,23 @@
   --fontcolor:white;
   --namecolor:#cf1b1b;
   --bgcolor:#14191b;
+  scrollbar-color: rgb(207, 27, 27) rgb(20, 25, 27) !important;
+  scrollbar-width: thin !important;
+}
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+body::-webkit-scrollbar-thumb {
+  background: var(--namecolor);
 }
 #navbar{
   background-color: var(--bgcolor);
   height: 60px;
   display: flex;
   justify-content: space-evenly;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
 }
 #navbar .center ul {
   display: flex;
@@ -62,7 +73,7 @@ nav a{
   transition: all linear 0.3s;
 }
 nav a.activ{
-  font-size: larger;
+  font-size: x-large;
   text-shadow: 0px 0px 5px grey;
 }
 #navbar .right button,#resume-button,.hirebtn{
@@ -124,7 +135,9 @@ nav a.activ{
   /* background-color: yellow ; */
   margin: 0px auto;
   box-sizing: border-box;
-  padding: 25px 10px;
+  padding: 125px 10px;
+  /* margin-top: 100px; */
+
 }
 #main .color-red{
   color: var(--namecolor);
@@ -179,7 +192,7 @@ nav a.activ{
 .myimg{
   height: 400px;
   width: 400px;
-  background-color: red;
+  /* background-color: red; */
   position: absolute;
   right: 30px;
   top: -100px;
@@ -235,7 +248,7 @@ nav a.activ{
 #main .social-icons .icon{
   height: 30px;
   width: 30px;
-  background-color:black;
+  /* background-color:black; */
   border-radius: 50%;
   text-align: center;
   line-height: 28px;
@@ -248,6 +261,74 @@ nav a.activ{
 /* #main .social-icons .icon:hover{
   box-shadow: 0px 0px 6px 4px rgb(0, 0, 26);
 } */
+#second{
+  /* background-color: blue; */
+  /* background-color: yellow; */
+  /* height: 65vh; */
+  height: auto;
+  width: 40vw;
+  margin: 60px auto;
+}
+#second .abt,#third .skl,#education .edu{
+  text-align: center;
+  color: var(--namecolor);
+  font-size: 50px;
+  text-decoration: underline;
+  font-weight: 800;
+}
+#second #abt-para{
+  padding: 30px;
+  color: rgb(204, 202, 202);
+  font-weight: 700;
+  font-size: 20px;
+}
+#second #abt-para a{
+  color: var(--namecolor);
+}
+#third{
+  height: 50vh;
+  width: 70vw;
+  /* background-color: blue; */
+  margin: 50px auto;
+}
+#third .skl a,.abt a{
+  color: var(--namecolor);
+  cursor: pointer;
+}
+#third .skills{
+  width: 100%;
+  height: inherit;
+  /* background-color: aqua; */
+  display: flex;
+  flex-wrap: wrap;
+}
+#third .skills-home{
+  /* background-color: red; */
+  width: 40%;
+  height: 50px;
+  /* border: 2px solid black; */
+  border-bottom: #cf1b1b;
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+  margin: 10px auto;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 20px;
+  /* letter-spacing: 10px; */
+  font-weight: 700;
+}
+#education{
+  width: 80vw;
+  height: 60vh;
+  background-color: blue;
+  margin: 100px auto;
+}
+
+#third .skills-home .skill-icon{
+  font-size: 20px;
+  /* letter-spacing: 10px; */
+} 
 @media screen and (max-width:730px) {
   #navbar .right{
     display: none;
@@ -286,10 +367,6 @@ nav a.activ{
     /* font-size: 24px; */
     -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
   }
-  
-  /* #main .objective{
-    display: none;
-  } */
   #main .hi{
     font-size: large;
   }
@@ -300,10 +377,11 @@ nav a.activ{
   #main{
     /* background-position: ; */
     /* background-position: ; */
-    background-size: cover;
+    /* background-size: cover; */
     /* back */
-    background-position-y: -150px;
+    /* background-position-y: -150px; */
     /* background-position: right; */
+    padding: 50px 0px;
   }
   #main .hi{
     margin-left: 10px;
@@ -347,6 +425,28 @@ nav a.activ{
     font-size: larger;
     line-height: 40px;
   }
+  
+  #second{
+    width: 80vw;
+  }
+  #second .abt{
+    font-size: 30px;
+  }
+  #second #abt-para{
+    font-size: medium;
+  }
+  #third{
+    width: 80vw;
+  }
+  #third .skills{
+    display: block;
+  }
+  #third .skills-home{
+    width: 60vw;
+  }
+  #education{
+    margin-top: 200px;
+  }
 }
 @media screen and (max-width:380px) {
   /* #main{
@@ -361,5 +461,15 @@ nav a.activ{
   }
   #main .text-div #text {
     font-size: 24px;
+  }
+  #second{
+    height: auto;
+    margin-top: 100px;
+  }
+  #education{
+    margin-top: 250px;
+  }
+  #education .edu{
+    font-size: 40px;
   }
 }
