@@ -15,7 +15,10 @@ const NavBar = () => {
     <nav id="navbar">
       <div className="center">
         <ul>
-          <motion.li whileHover={{scale:1.1}} transition={{type:'spring',stiffness:500}}>
+          <motion.li
+            whileHover={{ scale: 1.1 }}
+            transition={{ type: "spring", stiffness: 500 }}
+          >
             <NavLink
               to="/"
               className={({ isActive }) => (isActive ? "activ" : "")}
@@ -24,7 +27,10 @@ const NavBar = () => {
               Home
             </NavLink>
           </motion.li>
-          <motion.li whileHover={{scale:1.1}} transition={{type:'spring',stiffness:500}}>
+          <motion.li
+            whileHover={{ scale: 1.1 }}
+            transition={{ type: "spring", stiffness: 500 }}
+          >
             <NavLink
               to="/about"
               className={({ isActive }) => (isActive ? "activ" : "")}
@@ -32,7 +38,10 @@ const NavBar = () => {
               About
             </NavLink>
           </motion.li>
-          <motion.li whileHover={{scale:1.1}} transition={{type:'spring',stiffness:500}}>
+          <motion.li
+            whileHover={{ scale: 1.1 }}
+            transition={{ type: "spring", stiffness: 500 }}
+          >
             <NavLink
               to="/skills"
               className={({ isActive }) => (isActive ? "activ" : "")}
@@ -40,7 +49,10 @@ const NavBar = () => {
               Skills
             </NavLink>
           </motion.li>
-          <motion.li whileHover={{scale:1.1}} transition={{type:'spring',stiffness:500}} >
+          <motion.li
+            whileHover={{ scale: 1.1 }}
+            transition={{ type: "spring", stiffness: 500 }}
+          >
             <NavLink
               to="/education"
               className={({ isActive }) => (isActive ? "activ" : "")}
@@ -48,8 +60,11 @@ const NavBar = () => {
               Education
             </NavLink>
           </motion.li>
-         
-          <motion.li whileHover={{scale:1.1}} transition={{type:'spring',stiffness:500}}>
+
+          <motion.li
+            whileHover={{ scale: 1.1 }}
+            transition={{ type: "spring", stiffness: 500 }}
+          >
             <NavLink
               to="/projects"
               className={({ isActive }) => (isActive ? "activ" : "")}
@@ -57,7 +72,10 @@ const NavBar = () => {
               Projects
             </NavLink>
           </motion.li>
-          <motion.li whileHover={{scale:1.1}} transition={{type:'spring',stiffness:500}}>
+          <motion.li
+            whileHover={{ scale: 1.1 }}
+            transition={{ type: "spring", stiffness: 500 }}
+          >
             <NavLink
               to="/contact"
               className={({ isActive }) => (isActive ? "activ" : "")}

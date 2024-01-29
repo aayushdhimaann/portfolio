@@ -1,17 +1,9 @@
-import React, { Fragment } from "react";
-import NavBar from "./NavBar";
-import { Outlet } from "react-router";
-import Background from "./Background";
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCopyright } from "@fortawesome/free-solid-svg-icons";
-const Root = () => {
+const Footer = () => {
   return (
-    <Fragment>
-      <NavBar />
-      <Background />
-      <main>
-        <Outlet />
-      </main>
+    <>
       <footer>
         <p>Aayush Dhiman</p>
         <p>
@@ -19,8 +11,7 @@ const Root = () => {
           reserved
         </p>
       </footer>
-    </Fragment>
+    </>
   );
 };
-
-export default Root;
+export default Footer;

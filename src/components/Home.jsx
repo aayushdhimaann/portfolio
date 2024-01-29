@@ -1,7 +1,5 @@
 import React, { useRef, useEffect } from "react";
-// import background from '../assets/background.jpg'
-import background from "../assets/back.jpg";
-import Icons from "./Icons";
+import Icons from "../UI/Icons";
 import Typed from "typed.js";
 import HireMeButton from "./HireMeButton";
 import Me from "./Me";
@@ -10,8 +8,7 @@ import MiniSkills from "./MiniSkills";
 import MiniEducation from "./MiniEducation";
 import MiniProjects from "./MiniProjects";
 import MiniContact from "./MiniContact";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCopyright } from "@fortawesome/free-solid-svg-icons";
+import Footer from "./Footer";
 const Home = () => {
   const el = useRef(null);
   useEffect(() => {
@@ -75,7 +72,7 @@ const Home = () => {
       <section id="contact">
         <MiniContact />
       </section>
-     
+      <Footer />
     </>
   );
 };

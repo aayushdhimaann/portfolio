@@ -1,6 +1,6 @@
 import Home from "./components/Home";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import Root from "./components/Root";
+import Root from "./UI/Root";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Education from "./components/Education";
