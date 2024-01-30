@@ -38,6 +38,14 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
   z-index: 10;
 }
+#navbar .left{
+  height: inherit;
+  width: 100px;
+}
+#navbar .left img{
+  width: 60%;
+  margin: 5px 20px;
+}
 #navbar .center ul {
   display: flex;
   justify-content: center;
@@ -89,6 +97,9 @@ nav a.activ{
 #navbar .bars{
   display: none;
   position: absolute;
+}
+#navbar .bars button{
+  color: white;
 }
 #navbar2{
   /* animation: name duration timing-function delay iteration-count direction fill-mode; */
@@ -266,7 +277,7 @@ nav a.activ{
   width: 40vw;
   margin: 60px auto;
 }
-#second .abt,#third .skl,#education .edu,#projects #proj,#about .about-heading{
+#second .abt,#third .skl,#education .edu,#projects #proj,.about-heading{
   text-align: center;
   color: var(--namecolor);
   font-size: 50px;
@@ -404,16 +415,17 @@ footer{
   margin-top: 50px;
   padding: 10px;
   box-sizing: border-box;
-  position: relative;
+  /* position: relative; */
   /* bottom: 0px; */
 }
 #about{
   height: 100vh;
   width: 80vw;
-  background-color: aqua;
+  /* background-color: aqua; */
   margin: 0px auto;
   position: relative;
   top: 70px;
+  /* bottom: 10px; */
   box-sizing: border-box;
   /* padding: 10px; */
   /* padding-bottom: 10px; */
@@ -424,7 +436,7 @@ footer{
   color: var(--fontcolor);
   font-weight: 600;
   box-sizing: border-box;
-  padding: 30px 0px;
+  /* padding: 30px 0px; */
 }
 #about .about-container{
   height: 500px;
@@ -441,8 +453,51 @@ footer{
 }
 #about .about-container .about-img,#about .about-container .about-me{
   height: 400px;
-  width: 50%;
-  background-color: red;
+  width: 49%;
+  /* background-color: red; */
+  border: 2px solid black;
+  margin: 70px auto;
+}
+#about .about-container .about-img{
+  width: auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+#about .about-container .about-me p{
+  font-size: 18px;
+  padding: 20px;
+  box-sizing: border-box;
+  /* text-align: center; */
+}
+#about .about-container .about-me p a{
+  color: var(--namecolor);
+  font-weight: 800;
+}
+#about2{
+  height: 100vh;
+  width: 80vw;
+  background-color: springgreen;
+  margin: 50px auto;
+  margin-top: 100px;
+}
+#about2 .certifications{
+  height: 90vh;
+  width: 100%;
+  background-color: blueviolet;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+#about2 .certifications .certificate{
+  width: 25vw;
+  height: 300px;
+  background-color: chartreuse;
+  box-sizing: border-box;
+}
+#about2 .certifications .certificate img{
+  width: 200px;
 }
 footer p{
   text-align: center;
@@ -465,6 +520,10 @@ footer p{
   }
   #navbar{
     justify-content: end;
+  }
+  #navbar .left {
+    position: absolute;
+    left: 20px;
   }
   #navbar .bars{
     display: block;
@@ -566,9 +625,34 @@ footer p{
     margin-top: 200px;
     width: 80vw;
   }
+  #about{
+    height: 170vh;
+  }
   #about .about-heading{
     font-size: 40px;
   }
+  #about .about-container .about-img,#about .about-container .about-me{
+    width: 90%;
+  }
+  #about .about-container .about-img{
+    width: auto;
+  }
+  #about .about-container .about-me{
+    height: auto;
+  }
+  #about2{
+    margin-top: 600px;
+  }
+  .about-heading{
+    font-size: 30px;
+  }
+  #about2 .certifications{
+    display: block;
+  }
+  #about2 .certifications .certificate{
+    width: auto;
+  }
+  
 }
 @media screen and (max-width:380px) {
   /* #main{

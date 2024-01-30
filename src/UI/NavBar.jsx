@@ -5,6 +5,7 @@ import { faBars, faDownload, faXmark } from "@fortawesome/free-solid-svg-icons";
 import resume from "../assets/Aayushcv.pdf";
 import NavBar2 from "./NavBar2";
 import { motion } from "framer-motion";
+import logo from "../assets/logo.png";
 const NavBar = () => {
   const [isVisible, setIsVisible] = useState(false);
   const navbarShowHandler = () => {
@@ -13,6 +14,9 @@ const NavBar = () => {
 
   return (
     <nav id="navbar">
+      <div className="left">
+        <img src={logo} alt="" />
+      </div>
       <div className="center">
         <ul>
           <motion.li
