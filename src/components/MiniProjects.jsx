@@ -16,31 +16,37 @@ const MiniProjects = () => {
       id: "p1",
       image: cal,
       link: "https://aayushdhimaann.github.io/calculator/",
+      alt: "calculator",
     },
     {
       id: "p2",
       image: challenge,
       link: "https://github.com/aayushdhimaann/react-challenges",
+      alt: "react challenges",
     },
     {
       id: "p3",
       image: expense,
       link: "https://expense-tracker-aeaf5.web.app/",
+      alt: "expense tracker",
     },
     {
       id: "p4",
       image: food,
       link: "https://github.com/aayushdhimaann/food-app",
+      alt: "food app",
     },
     {
       id: "p5",
       image: uni,
       link: "https://github.com/aayushdhimaann/university-management-system",
+      alt: "university management system",
     },
     {
       id: "p6",
       image: xypo,
       link: "https://aayushdhimaann.github.io/xypo/",
+      alt: "xypo",
     },
   ];
   return (
@@ -56,6 +62,7 @@ const MiniProjects = () => {
             key={item.id}
             image={item.image}
             link={item.link}
+            alt={item.alt}
           />
         ))}
       </div>
