@@ -1,14 +1,11 @@
 import React from "react";
 import demo from "../assets/back.jpg";
-const CertificationDisplay = () => {
+const CertificationDisplay = ({ name, description, img }) => {
   return (
     <div className="certificate">
-      <img src={demo} alt="" />
-      <h1>Certification Name</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis,
-        officiis.
-      </p>
+      <img src={img} alt="" />
+      <h1>{name}</h1>
+      <p>{description}</p>
     </div>
   );
 };
