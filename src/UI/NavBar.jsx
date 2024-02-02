@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faDownload, faXmark } from "@fortawesome/free-solid-svg-icons";
 import resume from "../assets/Aayushcv.pdf";
@@ -11,10 +11,15 @@ const NavBar = () => {
   const navbarShowHandler = () => {
     setIsVisible(!isVisible);
   };
-
+  const navigate = useNavigate();
   return (
     <nav id="navbar">
-      <div className="left">
+      <div
+        className="left"
+        onClick={() => {
+          navigate("/");
+        }}
+      >
         <img src={logo} alt="" />
       </div>
       <div className="center">

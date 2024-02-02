@@ -103,7 +103,7 @@ nav a.activ{
 }
 #navbar2{
   /* animation: name duration timing-function delay iteration-count direction fill-mode; */
-  animation: navbar 0.7s ease-in-out 1 forwards;
+  animation: navbar 0.3s ease-in-out 1 forwards;
   background-color: var(--bgcolor);
   height: 100vh;
   /* width: 70vw; */
@@ -510,6 +510,9 @@ footer{
   aspect-ratio: 16/9;
   object-fit: cover;
 }
+#about2 .certifications .certificate .certino{
+  cursor: pointer;
+}
 footer p{
   text-align: center;
 }
@@ -652,7 +655,7 @@ footer p{
     height: auto;
   }
   #about2{
-    margin-top: 100px;
+    margin-top: 200px;
   }
   .about-heading{
     font-size: 30px;
