@@ -121,7 +121,7 @@ nav a.activ{
 }
 #navbar2 ul li{
   list-style: none;
-  margin-top: 20px;
+  margin-top: 40px;
   border-bottom: 2px solid black;
   /* margin-right: 100px; */
   text-align: center;
@@ -277,7 +277,7 @@ nav a.activ{
   width: 40vw;
   margin: 60px auto;
 }
-#second .abt,#third .skl,#education .edu,#projects #proj,.about-heading{
+#second .abt,#third .skl,#education .edu,#projects #proj,.about-heading,#experience #exp-heading{
   text-align: center;
   color: var(--namecolor);
   font-size: 50px;
@@ -419,7 +419,7 @@ footer{
   /* bottom: 0px; */
 }
 #about{
-  height: 100vh;
+  height: auto;
   width: 80vw;
   /* background-color: aqua; */
   margin: 0px auto;
@@ -439,7 +439,7 @@ footer{
   /* padding: 30px 0px; */
 }
 #about .about-container{
-  height: 500px;
+  height: auto;
   width: 80vw;
   /* background-color: aqua; */
   display: flex;
@@ -455,7 +455,7 @@ footer{
   height: 400px;
   width: 49%;
   /* background-color: red; */
-  border: 2px solid black;
+  /* border: 2px solid black; */
   margin: 70px auto;
 }
 #about .about-container .about-img{
@@ -473,12 +473,32 @@ footer{
   color: var(--namecolor);
   font-weight: 800;
 }
+#experience{
+  height: auto;
+  width: 80%;
+  margin: 0px auto;
+  padding-bottom: 50px;
+  /* margin-top: 150px; */
+  /* position: absolute; */
+  position: relative;
+  top: 150px;
+  /* background-color: blue; */
+}
+#exp p{
+  text-align: center;
+  font-size: larger;
+}
+#exp .institute{
+  margin-top: 50px;
+}
 #about2{
   height: auto;
   width: 80vw;
   /* background-color: springgreen; */
   margin: 50px auto;
-  margin-top: 100px;
+  /* margin-top: 100px; */
+  position: relative;
+  top: 100px;
 }
 #about2 .certifications{
   height: auto;
@@ -513,6 +533,7 @@ footer{
 #about2 .certifications .certificate .certino{
   cursor: pointer;
 }
+
 footer p{
   text-align: center;
 }
@@ -666,7 +687,9 @@ footer p{
   #about2 .certifications .certificate{
     width: auto;
   }
-  
+  #experience{
+    top: 250px;
+  }
 }
 @media screen and (max-width:400px){
   #about2{
@@ -702,5 +725,8 @@ footer p{
   }
   #about2{
     margin-top: 600px;
+  }
+  #experience{
+    top: 600px;
   }
 }

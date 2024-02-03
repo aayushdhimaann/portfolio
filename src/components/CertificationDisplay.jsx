@@ -34,8 +34,8 @@ const CertificationDisplay = ({
       <AnimatePresence>
         {showCertificate && (
           <motion.p
-            initial={{ height: 0, opacity: 0, scale: 0.5, x: -500 }}
-            animate={{ height: "auto", opacity: 1, scale: 1, x: 0 }}
+            initial={{ opacity: 0, scale: 0.5, x: -500 }}
+            animate={{ opacity: 1, scale: 1, x: 0 }}
           >
             {certificateNo}
           </motion.p>

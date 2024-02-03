@@ -4,6 +4,7 @@ import React from "react";
 import Footer from "./Footer";
 import aboutme from "../assets/about-me.jpg";
 import Certifications from "./Certifications";
+import Experience from "./Experience";
 const About = () => {
   return (
     <>
@@ -44,6 +45,9 @@ const About = () => {
             </p>
           </div>
         </div>
+      </section>
+      <section id="experience">
+        <Experience />
       </section>
       <section id="about2">
         <h1 className="about-heading">
