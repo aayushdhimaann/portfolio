@@ -14,11 +14,15 @@ const Experience = () => {
       <p>
         as a Freelancer Teacher <br /> from Mar 2023
       </p>
-      {/* <p>
-        I have honed my expertise in HTML, CSS, JavaScript, React, <br />{" "}
-        allowing me to create responsive and user-centric websites and <br />
-        applications and I Have Java Proficiency, C Language Mastery.
-      </p> */}
+      <p>
+        With all my experience and skills I teach how to create responsive and
+        effective
+        <br />
+        user-friendly designs using <b>HTML, CSS, JavaScript, React Js.</b>
+      </p>
+      <p>
+        I teach fundamentals of <b>C</b> and <b>Java</b> programming languages.
+      </p>
     </div>
   );
 };
