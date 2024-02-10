@@ -277,7 +277,7 @@ nav a.activ{
   width: 40vw;
   margin: 60px auto;
 }
-#second .abt,#third .skl,#education .edu,#projects #proj,.about-heading,#experience #exp-heading,#skills .skill-heading{
+#second .abt,#third .skl,#education .edu,#projects #proj,.about-heading,#experience #exp-heading,#skills .skill-heading,.educationpage .edu-heading,.contact .contact-heading{
   text-align: center;
   color: var(--namecolor);
   font-size: 50px;
@@ -548,8 +548,8 @@ nav a.activ{
   /* background-color: brown; */
   /* background-color: rgba(128, 128, 128, 0.044); */
   border: 1px solid;
-  margin: 10px auto;
-  border-radius: 10px;
+  margin: 50px auto;
+  border-radius: 5px;
   box-shadow: 0px 0px 10px grey;
   overflow: hidden;
   text-align: center;
@@ -570,6 +570,142 @@ nav a.activ{
 #skills .container .skillsdisplay p{
   font-size: larger;
   font-weight: 600;
+}
+.educationpage{
+  height: 80vh;
+  width: 80%;
+  background-color: blue;
+  position: relative;
+  top: 100px;
+  margin: 0px auto;
+}
+.educationpage .edu-container{
+  width: 100%;
+  height: 60vh;
+  background-color: aqua;
+  display: flex;
+  flex-wrap: wrap;
+}
+.educationpage .edu-container .edu-content{
+  width: 350px;
+  height: 400px;
+  background-color: red;
+  margin: 10px auto;
+}
+.contact{
+  height: auto;
+  width: 80%;
+  /* background-color: blue; */
+  margin: 0px auto;
+  position: relative;
+  top: 100px;
+  margin-bottom: 170px;
+}
+.contact .contact-container{
+  height: auto;
+  width: 90%;
+  /* background-color: red; */
+  /* border: 1px solid var(--bgcolor);
+  box-shadow: 0px 0px 5px var(--bgcolor); */
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px auto;
+}
+.contact .contact-container .left-container,.contact .contact-container .right-container{
+  width: 500px;
+  height: 450px;
+  /* background-color: yellow; */
+  /* border: 1px solid grey; */
+  margin: 20px auto;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 20px;
+}
+.left-container{
+  background-color: #14191ba9;
+}
+.right-container{
+  background-color: #1c1e25bf;
+}
+.left-container .myform #name{
+  margin-top: 30px;
+}
+.left-container .myform #name,.left-container .myform #email,.left-container .myform .message{
+  /* width: 400px; */
+  width: 99%;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid;
+  background-color: transparent;
+  font-size: 20px;
+  color: white;
+}
+.left-container .myform .message{
+  height: 120px;
+  resize: none;
+}
+.left-container input[type="submit"]{
+  height: 40px;
+  width: 150px;
+  background-color: var(--namecolor);
+  border: none;
+  border-radius: 5px;
+  /* font-weight: 700; */
+  margin: 20px;
+}
+.right-container .contact-info{
+  font-size: 25px;
+}
+.right-container .ques{
+  margin-top: 5px;
+  font-size: 20px;
+  color: #666666;
+}
+::placeholder{
+  font-size: 20px;
+}
+.right-container .address-container{
+  height: 300px;
+  width: 100%;
+  /* background-color: red; */
+  margin: 10px auto;
+  box-sizing: border-box;
+  /* padding: 20px; */
+}
+.right-container .address-container .address-sub-container{
+  height:auto;
+  width: 100%;
+  margin: 10px 0px;
+  /* background-color: #0000ff; */
+  /* text-align: center; */
+  /* position: relative; */
+}
+.right-container .address-container .address-sub-container .address-icon{
+  height: 50px;
+  width: 50px;
+  background-color: black;
+  border-radius: 50%;
+  /* margin-top: 5px; */
+  /* position: absolute;
+  top: 5px; */
+  font-size: 25px;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 5px;
+}
+.right-container .address-container .address-sub-container .address-data{
+  /* position: absolute;
+  left: 60px; */
+  font-size: large;
+  text-align: center;
+  margin-top: -50px;
+  margin-left: 50px;
+  color: #666666;
+}
+.right-container .address-container .address-sub-container .address-data span{
+  /* font-weight: 700; */
+  color: white;
 }
 footer{
   height: 10vh;

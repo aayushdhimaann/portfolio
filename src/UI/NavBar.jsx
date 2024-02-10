@@ -25,7 +25,8 @@ const NavBar = () => {
       <div className="center">
         <ul>
           <motion.li
-            whileHover={{ scale: 1.1 }}
+            // whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
             transition={{ type: "spring", stiffness: 500 }}
           >
             <NavLink
@@ -37,7 +38,8 @@ const NavBar = () => {
             </NavLink>
           </motion.li>
           <motion.li
-            whileHover={{ scale: 1.1 }}
+            // whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
             transition={{ type: "spring", stiffness: 500 }}
           >
             <NavLink
@@ -48,7 +50,8 @@ const NavBar = () => {
             </NavLink>
           </motion.li>
           <motion.li
-            whileHover={{ scale: 1.1 }}
+            // whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
             transition={{ type: "spring", stiffness: 500 }}
           >
             <NavLink
@@ -59,7 +62,8 @@ const NavBar = () => {
             </NavLink>
           </motion.li>
           <motion.li
-            whileHover={{ scale: 1.1 }}
+            // whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
             transition={{ type: "spring", stiffness: 500 }}
           >
             <NavLink
@@ -71,7 +75,8 @@ const NavBar = () => {
           </motion.li>
 
           <motion.li
-            whileHover={{ scale: 1.1 }}
+            // whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
             transition={{ type: "spring", stiffness: 500 }}
           >
             <NavLink
@@ -82,8 +87,10 @@ const NavBar = () => {
             </NavLink>
           </motion.li>
           <motion.li
-            whileHover={{ scale: 1.1 }}
+            // whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 500 }}
+            // whileFocus={{scale:0.8}}
+            whileTap={{ scale: 0.9 }}
           >
             <NavLink
               to="/contact"
@@ -96,7 +103,8 @@ const NavBar = () => {
       </div>
       <div className="right">
         <motion.button
-          whileHover={{ scale: 1.1 }}
+          // whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
           transition={{ type: "spring", stiffness: 500 }}
         >
           <a href={resume} download>
