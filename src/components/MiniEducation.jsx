@@ -11,16 +11,19 @@ const MiniEducation = () => {
       name: "Bachelor of Computer Applications",
       duration: "2021-Present",
       specialization: "Computer Applications or Computer Science",
+      school: "from J.P Institue of Education and Applied Sciences",
     },
     {
       id: "e2",
       name: "Intermediate",
       duration: "2018-2020",
+      school: "from SDS School",
     },
     {
       id: "e3",
       name: "High School",
       duration: "2016-2018",
+      school: "from St.R.C Convent School",
     },
   ];
   return (
@@ -37,6 +40,7 @@ const MiniEducation = () => {
             name={item.name}
             duration={item.duration}
             specialization={item.specialization}
+            school={item.school}
           />
         ))}
       </div>

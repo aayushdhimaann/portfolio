@@ -22,11 +22,6 @@ const NavBar2 = (props) => {
             Skills
           </Link>
         </li>
-        <li>
-          <Link to="/education" onClick={props.onClick}>
-            Education
-          </Link>
-        </li>
 
         <li>
           <Link to="/projects" onClick={props.onClick}>

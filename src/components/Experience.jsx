@@ -12,16 +12,16 @@ const Experience = () => {
         Currently working at It Skills, Muzaffarnagar, Uttar Pradesh
       </p>
       <p>
-        as a Freelancer Teacher <br /> from Mar 2023
+        as a Web Developer <br /> from Mar 2023
       </p>
       <p>
-        With all my experience and skills I teach how to create responsive and
+        With all my experience and skills I create responsive and
         effective
         <br />
         user-friendly designs using <b>HTML, CSS, JavaScript, React Js.</b>
       </p>
       <p>
-        I teach fundamentals of <b>C</b> and <b>Java</b> programming languages.
+        I also know the fundamentals of <b>C</b> and <b>Java</b> programming languages.
       </p>
     </div>
   );

@@ -22,6 +22,7 @@ const MiniEducationDisplay = (props) => {
       <h1>{props.name}</h1>
       <p className="edu-duration">{props.duration}</p>
       <p className="edu-specialization">{props.specialization}</p>
+      <p>{props.school}</p>
     </motion.div>
   );
 };

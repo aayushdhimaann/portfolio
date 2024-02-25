@@ -1,12 +1,36 @@
 import {
   faChevronCircleDown,
+  faEnvelope,
   faLocationDot,
+  faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
 import Footer from "./Footer";
+import ContactDisplay from "./ContactDisplay";
+import { motion } from "framer-motion";
 
 const Contact = () => {
+  const contact = [
+    {
+      id: "cc1",
+      icon: faLocationDot,
+      title: "Address: ",
+      description:
+        "Satyam Colony, Kairana District Shamli, Uttar Pradesh Pin Code- 247774",
+    },
+    {
+      id: "cc2",
+      icon: faPhone,
+      title: "Phone: ",
+      description: "+91 9416947392",
+    },
+    {
+      id: "cc3",
+      icon: faEnvelope,
+      title: "Email: ",
+      description: "aayush70dhiman@gmail.com",
+    },
+  ];
   return (
     <>
       <div className="contact">
@@ -47,7 +71,14 @@ const Contact = () => {
                 className="message"
                 required
               ></textarea>
-              <input type="submit" value="Send Message" />
+              <motion.button
+                whileTap={{ scale: 0.9 }}
+                transition={{ type: "spring", stiffness: 500 }}
+                type="submit"
+                className="submitbutton"
+              >
+                Send Message
+              </motion.button>
             </form>
           </div>
           <div className="right-container">
@@ -56,54 +87,14 @@ const Contact = () => {
               If you have any question just send a message !
             </p>
             <div className="address-container">
-              <div className="address-sub-container">
-                <div className="address-icon">
-                  <FontAwesomeIcon icon={faLocationDot} />
-                </div>
-                <div className="address-data">
-                  <p>
-                    <span>Address: </span>
-                    Satyam Colony, Kairana District Shamli, Uttar Pradesh Pin
-                    Code- 247774
-                  </p>
-                </div>
-              </div>
-              <div className="address-sub-container">
-                <div className="address-icon">
-                  <FontAwesomeIcon icon={faLocationDot} />
-                </div>
-                <div className="address-data">
-                  <p>
-                    <span>Address: </span>
-                    Satyam Colony, Kairana District Shamli, Uttar Pradesh Pin
-                    Code- 247774
-                  </p>
-                </div>
-              </div>
-              <div className="address-sub-container">
-                <div className="address-icon">
-                  <FontAwesomeIcon icon={faLocationDot} />
-                </div>
-                <div className="address-data">
-                  <p>
-                    <span>Address: </span>
-                    Satyam Colony, Kairana District Shamli, Uttar Pradesh Pin
-                    Code- 247774
-                  </p>
-                </div>
-              </div>
-              <div className="address-sub-container">
-                <div className="address-icon">
-                  <FontAwesomeIcon icon={faLocationDot} />
-                </div>
-                <div className="address-data">
-                  <p>
-                    <span>Address: </span>
-                    Satyam Colony, Kairana District Shamli, Uttar Pradesh Pin
-                    Code- 247774
-                  </p>
-                </div>
-              </div>
+              {contact.map((item) => (
+                <ContactDisplay
+                  key={item.id}
+                  icon={item.icon}
+                  title={item.title}
+                  description={item.description}
+                />
+              ))}
             </div>
           </div>
         </div>

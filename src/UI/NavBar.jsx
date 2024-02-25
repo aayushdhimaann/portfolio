@@ -61,18 +61,6 @@ const NavBar = () => {
               Skills
             </NavLink>
           </motion.li>
-          <motion.li
-            // whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            transition={{ type: "spring", stiffness: 500 }}
-          >
-            <NavLink
-              to="/education"
-              className={({ isActive }) => (isActive ? "activ" : "")}
-            >
-              Education
-            </NavLink>
-          </motion.li>
 
           <motion.li
             // whileHover={{ scale: 1.1 }}
