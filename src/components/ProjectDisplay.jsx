@@ -17,7 +17,7 @@ const ProjectDisplay = (props) => {
             {props.title}
           </motion.h1>
         </a>
-        <p>{props.description}</p>
+        <p id="project-desc">{props.description}</p>
       </div>
     </div>
   );

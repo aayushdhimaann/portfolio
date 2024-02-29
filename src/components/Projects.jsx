@@ -75,8 +75,8 @@ const Projects = () => {
           on my{" "}
           <a href="https://github.com/aayushdhimaann" target="_blank">
             github
-          </a>{" "}
-          profile.
+          </a>
+          &nbsp; profile.
         </p>
       </div>
       <Footer />

@@ -23,10 +23,10 @@
   scrollbar-color: rgb(207, 27, 27) rgb(20, 25, 27) !important;
   scrollbar-width: thin !important;
 }
-body{
+/* body{
   background-color: black !important;
   color: white !important;
-}
+} */
 body::-webkit-scrollbar {
   width: 0.25rem;
 }
@@ -49,6 +49,7 @@ body::-webkit-scrollbar-thumb {
 #navbar .left img{
   width: 60%;
   margin: 5px 20px;
+  cursor: pointer;
 }
 #navbar .center ul {
   display: flex;
@@ -226,6 +227,7 @@ nav a.activ{
   height: 40px;
   width: 150px;
   font-size: larger;
+  color: white;
 }
 @keyframes navbar {
   from{
@@ -398,6 +400,7 @@ nav a.activ{
   font-weight: 700;
   font-size: 20px;
   cursor: pointer;
+  color: white;
   /* margin-top: -200px; */
 }
 #about{
@@ -697,7 +700,7 @@ nav a.activ{
   margin: 50px auto;
   display: flex;
   flex-wrap: wrap;
-  box-shadow: 0px 0px 10px #cf1b1b;
+  box-shadow: 0px 0px 10px rgb(98, 97, 97);
   border-radius: 10px;
   box-sizing: border-box;
   padding: 20px;
@@ -920,7 +923,7 @@ footer p{
     font-size: 28px;
   }
   .project-page .project-section .project-description p{
-    font-size: 25px;
+    font-size: 20px;
   }
 }
 @media screen and (max-width:400px){
