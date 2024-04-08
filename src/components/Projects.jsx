@@ -7,6 +7,7 @@ import xypo from "../assets/xypo.png";
 import challenge from "../assets/challenge.png";
 import expense from "../assets/expense.png";
 import uni from "../assets/uni.png";
+import todo from "../assets/todo.png";
 import ProjectDisplay from "./ProjectDisplay";
 import Footer from "./Footer";
 const Projects = () => {
@@ -52,6 +53,13 @@ const Projects = () => {
       link: "https://github.com/aayushdhimaann/university-management-system",
       description:
         "This app is made with Java and Netbeans IDE for adding the data of student. We can view, add, update the data of students and teachers by this app. Frontend of this app is made with java swing and on the backend I used mysql database. ",
+    },
+    {
+      url: todo,
+      title: "TODO LIST",
+      link: "https://todo-app-gold-beta.vercel.app/",
+      description:
+        "This app is made with React in frontend and firebase realtime database in backend. By this app you can add, delete , update your task. I used fontawesome icon for icons and Hash Loader library for Hash loader.",
     },
   ];
   return (
