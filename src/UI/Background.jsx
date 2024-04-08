@@ -57,8 +57,8 @@ const Background = () => {
               type: "circle",
             },
             onHover: {
-              enable: false,
-              mode: "trail",
+              enable: true,
+              mode: "grab",
               parallax: {
                 enable: false,
                 force: 2,
