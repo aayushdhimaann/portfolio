@@ -16,13 +16,13 @@ const MiniEducation = () => {
     {
       id: "e2",
       name: "Intermediate",
-      duration: "2018-2020",
+      duration: "2019-2020",
       school: "from SDS School",
     },
     {
       id: "e3",
       name: "High School",
-      duration: "2016-2018",
+      duration: "2017-2018",
       school: "from St.R.C Convent School",
     },
   ];
