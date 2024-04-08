@@ -29,7 +29,7 @@ const MiniEducation = () => {
   return (
     <>
       <h1 className="edu">
-        <Link to="/education">
+        <Link to="">
           Education <FontAwesomeIcon icon={faGraduationCap} />
         </Link>
       </h1>

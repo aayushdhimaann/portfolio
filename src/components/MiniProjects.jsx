@@ -52,7 +52,7 @@ const MiniProjects = () => {
   return (
     <div>
       <h1 id="proj">
-        <Link>
+        <Link to='/projects'>
           Projects <FontAwesomeIcon icon={faFaceGrinWide} />
         </Link>
       </h1>
