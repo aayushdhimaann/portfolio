@@ -2,17 +2,21 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretDown, faCaretUp } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 const CertificationDisplay = ({
   name,
   description,
   img,
   address,
   certificateNo,
+  link
 }) => {
   const [showCertificate, setShowCertificate] = useState(false);
   return (
     <div className="certificate">
-      <img src={img} alt="" />
+      <Link to={link} target="_blank">
+        <img src={img} alt="" />
+      </Link>
       <h1>{name}</h1>
       <p>{description}</p>
       <p>{address}</p>

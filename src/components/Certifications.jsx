@@ -13,7 +13,8 @@ const Certifications = () => {
       description: "Name of the institution: It Skills",
       img: c,
       address: "Address: Muzaffarnagar, Uttar Pradesh",
-      certificateNo: "1",
+      certificateNo: "MZN202200094",
+      link: "https://drive.google.com/drive/folders/17aOvH4TwIczjc8_EX7QeKlLc9dpEwDr2?usp=sharing",
     },
     {
       id: "c2",
@@ -21,7 +22,8 @@ const Certifications = () => {
       description: "Name of the institution: It Skills",
       img: java,
       address: "Address: Muzaffarnagar, Uttar Pradesh",
-      certificateNo: "2",
+      certificateNo: "ITS2022000183",
+      link: "https://drive.google.com/drive/folders/17aOvH4TwIczjc8_EX7QeKlLc9dpEwDr2?usp=sharing",
     },
     {
       id: "c3",
@@ -30,6 +32,7 @@ const Certifications = () => {
       img: java2,
       address: "Instructors: CodeIn Academy",
       certificateNo: "UC-b701ff0e-9134-4696-9e75-b9d3457b42ca",
+      link: "https://drive.google.com/drive/folders/17aOvH4TwIczjc8_EX7QeKlLc9dpEwDr2?usp=sharing",
     },
     {
       id: "c4",
@@ -38,6 +41,7 @@ const Certifications = () => {
       img: boot,
       address: "Instructors: YouAccel Training",
       certificateNo: "UC-26a91cee-3200-4ffa-a869-c5e4467df2ca",
+      link: "https://drive.google.com/drive/folders/17aOvH4TwIczjc8_EX7QeKlLc9dpEwDr2?usp=sharing",
     },
     {
       id: "c5",
@@ -45,7 +49,8 @@ const Certifications = () => {
       description: "Name of the institution: It Skills",
       img: web,
       address: "Address: Muzaffarnagar, Uttar Pradesh",
-      certificateNo: "3",
+      certificateNo: "ITS2022000183",
+      link: "https://drive.google.com/drive/folders/17aOvH4TwIczjc8_EX7QeKlLc9dpEwDr2?usp=sharing",
     },
   ];
   return (
@@ -58,6 +63,7 @@ const Certifications = () => {
           img={item.img}
           address={item.address}
           certificateNo={item.certificateNo}
+          link={item.link}
         />
       ))}
     </div>

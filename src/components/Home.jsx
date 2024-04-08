@@ -28,9 +28,9 @@ const Home = () => {
         <div className="hi mleft">
           <h1>Hi,</h1>
         </div>
-        <div id="me">
+        {/* <div id="me">
           <Me />
-        </div>
+        </div> */}
         <div className="waviy mleft text-center">
           <span>I'</span>
           <span>m</span>&nbsp;

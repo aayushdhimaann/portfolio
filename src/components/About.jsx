@@ -23,9 +23,9 @@ const About = () => {
         <br />
         <h3>Get to know me&nbsp;!</h3>
         <div className="about-container">
-          <div className="about-img">
+          {/* <div className="about-img">
             <img src={aboutme} alt="my image" />
-          </div>
+          </div> */}
           <div className="about-me">
             <p>
               I'm a <b>Frontend Web Developer</b> building the Front-end of

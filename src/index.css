@@ -442,7 +442,7 @@ nav a.activ{
   margin: 0px auto;
   padding-bottom: 50px;
   position: relative;
-  top: 150px;
+  /* top: 150px; */
 }
 #exp p{
   text-align: center;
@@ -456,7 +456,7 @@ nav a.activ{
   width: 80vw;
   margin: 50px auto;
   position: relative;
-  top: 100px;
+  /* top: 100px; */
 }
 
 /* about page certification section */
@@ -469,7 +469,7 @@ nav a.activ{
   justify-content: center;
   align-items: center;
   gap: 10px;
-  margin-bottom: 160px;
+  margin-bottom: 50px;
 }
 #about2 .certifications .certificate{
   width: 25vw;
@@ -795,7 +795,7 @@ footer p{
   }
   #main .hirebtn{
     margin-left: 100px;
-    margin-top: 250px;
+    margin-top: 150px;
   }
   #main .social-icons{
     margin-top: 10%;
@@ -833,7 +833,7 @@ footer p{
     width: 80vw;
   }
   #about{
-    height: 170vh;
+    height: auto;
   }
   #about .about-heading{
     font-size: 40px;
@@ -848,7 +848,7 @@ footer p{
     height: auto;
   }
   #about2{
-    margin-top: 200px;
+    /* margin-top: 200px; */
   }
   .about-heading{
     font-size: 30px;
@@ -859,9 +859,9 @@ footer p{
   #about2 .certifications .certificate{
     width: auto;
   }
-  #experience{
+  /* #experience{
     top: 250px;
-  }
+  } */
   .project-page .project-section .project-description{
     margin-top: 30px;
   }
@@ -875,10 +875,31 @@ footer p{
     margin-top: 50px;
   }
 }
-@media screen and (max-width:400px){
-  #about2{
-    margin-top: 300px;
-  }  
+@media screen and (max-width:550px){
+  #navbar .center{
+    display: none;
+  }
+  #navbar{
+    justify-content: end;
+  }
+  #navbar .left {
+    position: absolute;
+    left: 20px;
+  }
+  #navbar .bars{
+    display: block;
+    position: fixed;
+    top: 10px;
+    z-index: 7;
+  }
+  #navbar .bars button{
+    font-size: 35px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    position: absolute;
+    right: 15px;
+  }
 }
 @media screen and (max-width:380px) {
   /* #main{
@@ -908,9 +929,9 @@ footer p{
     font-size: 30px;
   }
   #about2{
-    margin-top: 600px;
+    /* margin-top: 600px; */
   }
-  #experience{
+  /* #experience{
     top: 600px;
-  }
+  } */
 }
