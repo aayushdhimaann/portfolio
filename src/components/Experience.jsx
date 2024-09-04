@@ -20,7 +20,7 @@ const Experience = () => {
         <br />
         using <b>HTML, CSS, JavaScript, CodeIgniter, Laravel.</b>
       </p>
-
+    <hr>
      <p className="institute">
     Software Development Trainee at It Skills, Muzaffarnagar, Uttar Pradesh
     </p>
@@ -28,7 +28,7 @@ const Experience = () => {
         Mar 2023 - Feb 2024
     </p>
     <p>
-        Developed responsive and user-friendly web applications utilizing <b>HTML, CSS, JavaScript, and React.js</b>.
+        Developed responsive and user-friendly web applications utilizing <br><b>HTML, CSS, JavaScript, and React.js</b>.
     </p>
     <p>
         Possess foundational knowledge in <b>C</b> and <b>Java</b> programming languages.
