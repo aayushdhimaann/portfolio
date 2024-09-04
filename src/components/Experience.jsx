@@ -10,20 +10,29 @@ const Experience = () => {
         Work <FontAwesomeIcon icon={faBriefcase} />
       </h1>
       <p className="institute">
-        Currently working at It Skills, Muzaffarnagar, Uttar Pradesh
+        Currently employed at Megamax Services, Noida, Uttar Pradesh
       </p>
       <p>
-        as a Web Developer <br /> from Mar 2023
+        as a Junior Software Engineer <br /> from Apr 2024.
       </p>
       <p>
-        With all my experience and skills I create responsive and effective
+        Creating functionalities in web 
         <br />
-        user-friendly designs using <b>HTML, CSS, JavaScript, React Js.</b>
+        using <b>HTML, CSS, JavaScript, CodeIgniter, Laravel.</b>
       </p>
-      <p>
-        I also know the fundamentals of <b>C</b> and <b>Java</b> programming
-        languages.
-      </p>
+
+     <p className="institute">
+    Software Development Trainee at It Skills, Muzaffarnagar, Uttar Pradesh
+    </p>
+    <p>
+        Mar 2023 - Feb 2024
+    </p>
+    <p>
+        Developed responsive and user-friendly web applications utilizing <b>HTML, CSS, JavaScript, and React.js</b>.
+    </p>
+    <p>
+        Possess foundational knowledge in <b>C</b> and <b>Java</b> programming languages.
+    </p>
     </motion.div>
   );
 };
