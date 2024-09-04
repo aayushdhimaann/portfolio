@@ -18,21 +18,21 @@ const Experience = () => {
       <p>
         Creating functionalities in web 
         <br />
-        using <b>HTML, CSS, JavaScript, CodeIgniter, Laravel.</b>
+        using <strong>HTML, CSS, JavaScript, CodeIgniter, Laravel</strong>.
       </p>
-    <hr>
-     <p className="institute">
-    Software Development Trainee at It Skills, Muzaffarnagar, Uttar Pradesh
-    </p>
-    <p>
+      <hr />
+      <p className="institute">
+        Software Development Trainee at It Skills, Muzaffarnagar, Uttar Pradesh
+      </p>
+      <p>
         Mar 2023 - Feb 2024
-    </p>
-    <p>
-        Developed responsive and user-friendly web applications utilizing <br/><b>HTML, CSS, JavaScript, and React.js</b>.
-    </p>
-    <p>
-        Possess foundational knowledge in <b>C</b> and <b>Java</b> programming languages.
-    </p>
+      </p>
+      <p>
+        Developed responsive and user-friendly web applications utilizing <br /><strong>HTML, CSS, JavaScript, and React.js</strong>.
+      </p>
+      <p>
+        Possess foundational knowledge in <strong>C</strong> and <strong>Java</strong> programming languages.
+      </p>
     </motion.div>
   );
 };
