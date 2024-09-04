@@ -20,7 +20,6 @@ const Experience = () => {
         <br />
         using <strong>HTML, CSS, JavaScript, CodeIgniter, Laravel</strong>.
       </p>
-      <hr />
       <p className="institute">
         Software Development Trainee at It Skills, Muzaffarnagar, Uttar Pradesh
       </p>
