@@ -35,7 +35,7 @@ const NavBar2 = (props) => {
         </li>
         <li>
           <button id="resume-button">
-            <a href={resume} download onClick={props.onClick}>
+            <a href={resume} download="Aayush Dhiman" onClick={props.onClick}>
               Resume <FontAwesomeIcon icon={faDownload} />
             </a>
           </button>

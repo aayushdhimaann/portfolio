@@ -95,7 +95,7 @@ const NavBar = () => {
           whileTap={{ scale: 0.9 }}
           transition={{ type: "spring", stiffness: 500 }}
         >
-          <a href={resume} download>
+          <a href={resume} download="Aayush Dhiman">
             Resume <FontAwesomeIcon icon={faDownload} />
           </a>
         </motion.button>
