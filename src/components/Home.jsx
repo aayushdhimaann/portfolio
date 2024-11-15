@@ -13,7 +13,7 @@ const Home = () => {
   const el = useRef(null);
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["DESIGN", "BUILD"],
+      strings: ["DESIGN", "BUILD",'DEVELOP'],
       typeSpeed: 100,
       loopCount: Infinity,
       loop: true,
