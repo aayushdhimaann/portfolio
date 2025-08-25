@@ -9,7 +9,7 @@ const MiniEducation = () => {
     {
       id: "e1",
       name: "Bachelor of Computer Applications",
-      duration: "2021-Present",
+      duration: "2021-2024",
       specialization: "Computer Applications or Computer Science",
       school: "from J.P Institue of Education and Applied Sciences",
     },
